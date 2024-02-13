@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import LoginComponent from "../components/LoginComponent.jsx";
 import { onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
@@ -16,6 +16,6 @@ export default function Login() {
             //setLoading(false);
          }
       });
-   }, []);
+   },);
    return <LoginComponent />;
 }

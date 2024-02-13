@@ -58,7 +58,7 @@ export default function LoginComponent() {
          <div className="">
             <a className="">
                New to Pixelmedia?{" "}
-               <span className="" onClick={() => navigate("/register")}>
+               <span className="cursor-pointer" onClick={() => navigate("/register")}>
                   Join now
                </span>
             </a>
