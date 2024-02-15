@@ -3,7 +3,7 @@ import { LoginAPI, GoogleSignInAPI } from "../api/AuthAPI";
 //import LinkedinLogo from "../assets/linkedinLogo.png";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import GoogleButton from 'react-google-button'
+import GoogleButton from 'react-google-button';
 
 export default function LoginComponent() {
    let navigate = useNavigate();
@@ -62,9 +62,7 @@ export default function LoginComponent() {
                   Join now
                </span>
             </a>
-            <GoogleButton
-               onClick={googleSignIn}
-            />
+            <GoogleButton onClick={googleSignIn} />
          </div>
       </div>
    );

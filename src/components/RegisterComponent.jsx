@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { RegisterAPI } from "../api/AuthAPI";
+import { RegisterAPI, GoogleSignInAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
 //import LinkedinLogo from "../assets/linkedinLogo.png";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueID";
 //import "../Sass/LoginComponent.scss";
 import { toast } from "react-toastify";
+import GoogleButton from 'react-google-button';
 
 export default function RegisterComponent() {
    let navigate = useNavigate();
@@ -18,8 +19,8 @@ export default function RegisterComponent() {
             userID: getUniqueID(),
             name: credentails.name,
             email: credentails.email,
-            // imageLink:
-            //    "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+            imageLink:
+               "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
          });
          navigate("/home");
          localStorage.setItem("userEmail", res.user.email);
@@ -29,12 +30,16 @@ export default function RegisterComponent() {
       }
    };
 
+   const googleSignIn = () => {
+      GoogleSignInAPI();
+   };
+
    return (
       <div className="">
          {/* <img src={LinkedinLogo} className="linkedinLogo" /> */}
 
          <div className="">
-            <h1 className="heading">Make the most of your professional life</h1>
+            <h1 className="">Make the most of your professional life</h1>
 
             <div className="">
                <input
@@ -74,6 +79,7 @@ export default function RegisterComponent() {
                   Sign in
                </span>
             </p>
+            <GoogleButton onClick={googleSignIn} />
          </div>
       </div>
    );
