@@ -11,11 +11,11 @@ PixelMedia will allow users to register, log in, create, edit, and delete posts.
 | Option | Description |
 | ------ | ----------- |
 | User Management  | Requirement ID: FR-01
-Requirement Description: Users shall be able to log in to the PixelMedia platform using their credentials.
-Acceptance Criteria: Users can successfully log in using their registered username and password.
-Requirement ID: FR-02
-Requirement Description: Users shall be able to register for a new account on the PixelMedia platform.
-Acceptance Criteria: New users can successfully register by providing required information such as username, email, and password.|
+                   | Requirement Description: Users shall be able to log in to the PixelMedia platform using their credentials.
+                   | Acceptance Criteria: Users can successfully log in using their registered username and password.|
+                   | Requirement ID: FR-02
+                   | Requirement Description: Users shall be able to register for a new account on the PixelMedia platform.
+                   | Acceptance Criteria: New users can successfully register by providing required information such as username, email, and password.|
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
