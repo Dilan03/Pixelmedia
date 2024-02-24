@@ -10,6 +10,7 @@ PixelMedia will allow users to register, log in, create, edit, and delete posts.
 
 <details open>
 <summary>Functional requirements</summary>
+
 | Functional Requirement | Description |
 | ------ | ----------- |
 | FR-01  | **Requirement Description:** Users shall be able to log in to the PixelMedia platform using their credentials <br>**Acceptance Criteria:** Users can successfully log in using their registered username and password.|
