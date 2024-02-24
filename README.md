@@ -6,8 +6,10 @@ PixelMedia is a social media platform designed for pixel art enthusiasts. Users 
 
 PixelMedia will allow users to register, log in, create, edit, and delete posts. Users will also have the ability to customize their profiles, interact with other users' posts through likes and comments, and create simple pixel art within the application.
 
-### Functional Requirements
+### Features
 
+<details open>
+<summary>Functional requirements</summary>
 | Functional Requirement | Description |
 | ------ | ----------- |
 | FR-01  | **Requirement Description:** Users shall be able to log in to the PixelMedia platform using their credentials <br>**Acceptance Criteria:** Users can successfully log in using their registered username and password.|
@@ -21,6 +23,8 @@ PixelMedia will allow users to register, log in, create, edit, and delete posts.
 | FR-09 | **Requirement Description:** Users shall have access to a page for creating very simple pixel art.<br> **Acceptance Criteria:** Users can navigate to the pixel art creation page and utilize drawing tools to create pixel art.|
 | FR-10 | **Requirement Description:** Users can download their pixel art creations.<br> **Acceptance Criteria:** Users can download their created pixel art in common image formats such as PNG or JPEG.|
 | FR-11 | **Requirement Description:**  Users shall have the ability to use a search bar to find other users on the PixelMedia platform.<br> **Acceptance Criteria:** Users can enter keywords or usernames into a search bar located within the platform's interface. |
+
+</details>
 
 ### Technologies used
 
