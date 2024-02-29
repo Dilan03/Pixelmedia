@@ -5,7 +5,8 @@ import { postUserData } from "../api/FirestoreAPI";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueID";
 //import "../Sass/LoginComponent.scss";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import GoogleButton from 'react-google-button';
 
 export default function RegisterComponent() {
@@ -37,7 +38,7 @@ export default function RegisterComponent() {
    return (
       <div className="">
          {/* <img src={LinkedinLogo} className="linkedinLogo" /> */}
-
+         <ToastContainer />
          <div className="">
             <h1 className="">Make the most of your professional life</h1>
 
