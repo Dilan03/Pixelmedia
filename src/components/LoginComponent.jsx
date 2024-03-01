@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { LoginAPI, GoogleSignInAPI } from "../api/AuthAPI";
+import { LoginAPI } from "../api/AuthAPI";
 //import LinkedinLogo from "../assets/linkedinLogo.png";
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import GoogleButton from 'react-google-button';
 
 export default function LoginComponent() {
@@ -15,9 +14,7 @@ export default function LoginComponent() {
          toast.success("Signed In to Linkedin!");
          localStorage.setItem("userEmail", res.user.email);
          navigate("/home");
-         // toast.success("Signed In to Linkedin!");
       } catch (err) {
-         console.log(err);
          toast.error("Please Check your Credentials");
       }
    };
@@ -43,16 +40,15 @@ export default function LoginComponent() {
       //    }
       // };
 
-      let response = await GoogleSignInAPI();
-      console.log(response._tokenResponse.email);
-      console.log(response._tokenResponse.displayName);
-      console.log(response._tokenResponse);
+      // let response = await GoogleSignInAPI();
+      // console.log(response._tokenResponse.email);
+      // console.log(response._tokenResponse.displayName);
+      // console.log(response._tokenResponse);
 
    };
 
    return (
       <div className="">
-         <ToastContainer />
 
          {/* <img src={LinkedinLogo} className="" /> */}
 
