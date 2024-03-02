@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from "react";
 import { postStatus, getStatus, updatePost } from "../../../api/FirestoreAPI";
 import { getCurrentTimeStamp } from "../../../helpers/useMoment";
-//import ModalComponent from "../Modal";
+import ModalComponent from "../Modal";
 import { uploadPostImage } from "../../../api/ImageUpload";
 import { getUniqueID } from "../../../helpers/getUniqueId";
-//import PostsCard from "../PostsCard";
+import PostsCard from "../PostCard";
 //import "./index.scss";
 
 import PropTypes from 'prop-types';
@@ -77,7 +77,7 @@ export default function PostStatus({ currentUser }) {
             </button>
          </div>
 
-         {/* <ModalComponent
+         <ModalComponent
             setStatus={setStatus}
             modalOpen={modalOpen}
             setModalOpen={setModalOpen}
@@ -90,13 +90,13 @@ export default function PostStatus({ currentUser }) {
             setPostImage={setPostImage}
             setCurrentPost={setCurrentPost}
             currentPost={currentPost}
-         /> */}
+         />
 
          <div>
             {allStatuses?.map((posts) => {
                return (
                   <div key={posts.id}>
-                     {/* <PostsCard posts={posts} getEditData={getEditData} /> */}
+                     <PostsCard posts={posts} getEditData={getEditData} />
                   </div>
                );
             })}

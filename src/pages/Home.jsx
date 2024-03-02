@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import HomeComponent from "../components/HomeComponent";
 import { onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
